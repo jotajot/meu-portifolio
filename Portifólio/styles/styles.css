@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./reset.css);
+
+:root{
+    --fonte-cabecalho: 'Poppins', sans-serif; 
+}
+
+body{
+    height:100vh;
+    box-sizing: border-box;
+    background-color: #24272C;
+    padding: -10px 10px 50px 30px;
+}
+
+section{ background: #232732;
+color:white;
+box-shadow: inset 0px 0px 20px 2px black;
+margin: 1.6rem;
+border-radius: 24px;
+min-height: 100vh;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.cabecalho{
+    padding: 45px 0px 0px 29%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 83px;
+    font-family: var(--fonte-cabecalho);
+    font-size: 82%;
+}
+
+.cabecalho__menu__link{
+    color:white;
+    background-color: #24272C;
+    padding: 18px 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 30px;
+    box-shadow: -5px -3px 5px -3px /*#6086D3;*/rgba(128, 128, 128, 0.5);
+    /*box-shadow: 0.1px 0px 1.1px 0.1px #778192;*/
+    text-decoration: none;
+}
+.navegacao{
+    width: 18rem;
+    border-radius: 10rem;
+    box-shadow: -5px -3px 20px -3px /*#6086D3;*/rgba(128, 128, 128, 0.5);
+}
+.apresentacao{
+    padding:8% 8% 0% 8%;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.apresentacao__titulo{
+    font-family: var(--fonte-cabecalho);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.apresentacao__nome{
+    font-family: var(--fonte-cabecalho);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.apresentacao__ocupacao{
+    font-family: var(--fonte-cabecalho);
+    font-size: 1.3rem;
+}
+.resumo__apresentacao__texto{
+    font-family: var(--fonte-cabecalho);
+    font-size: 17px;
+    font-weight: lighter;
+    width: 30rem;
+}
+.icon__github{
+    background-color: red;
+    width: 3.5rem;
+    border-radius: 30px;
+    margin: -5px;
+    border: 1px solid red;
+    margin-top: 2.8rem;
+    margin-right: 13rem;
+}
+.icon__github:hover{
+    background-color: #232732;
+    border: #232732;
+}
+.nome-destaque{
+    color: black;
+}
+.nome-destaque-segundo{
+    color: red;
+}
+.h1__contato{
+    font-family: var(--fonte-cabecalho);
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 20% 12%;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+    margin-left: 60%;
+}
+.elemento-com-imagem{
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 42rem;
+    padding-right: 50%;
+}
+.elemento-com-imagem img{
+    opacity: 1;
+}
+.input {
+    margin: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 10px rgb(5, 5, 5);
+    color: #fff;
+}
+.botao__enviar{
+    color:white;
+    background-color: #24272C;
+    padding: 10px 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 20px;
+    box-shadow: -5px -3px 5px -3px /*#6086D3;*/rgba(128, 128, 128, 0.5);
+    /*box-shadow: 0.1px 0px 1.1px 0.1px #778192;*/
+    text-decoration: none;
+}

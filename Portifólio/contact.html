@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <section>
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="contact.html">Contato</a>
+                <a class="cabecalho__menu__link" href="index.html">Resumo</a>
+                <a class="cabecalho__menu__link">Sobre mim</a>
+                <a class="cabecalho__menu__link">Certificações</a>
+                <a class="cabecalho__menu__link">Projetos</a>
+            </nav>
+        </header>
+        <h1 class="h1__contato">Entre em contato</h1>
+        <div class="elemento-com-imagem">
+            <img src="./transferir-removebg-preview.png" alt="logo da aranha do miles">
+        </div>
+        <div class="container" id="form-container">
+            <form id="contact-form">
+                <label for="name"><input placeholder="Nome*" class="input" name="text" type="text"><br></label><br>
+                <label for="email"><input placeholder="Email*" class="input" name="text" type="text"><br></label><br>
+                <label for="message"><textarea placeholder="Mensagem*" class="input" id="message" name="message" required></textarea><br></label><br>
+                <button class="botao__enviar" type="submit">Enviar</button>
+            </form>
+            <div id="confirmation" style="display: none;">
+                <p>Obrigado por entrar em contato! Recebemos sua mensagem.</p>
+            </div>
+        </div>
+        <script src="./contato.js"></script>
+    </section>
+</body>
+</html>
