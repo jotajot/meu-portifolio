@@ -12,7 +12,7 @@ body{
     padding: -10px 10px 50px 30px;
 }
 
-section{ background: #232732;
+#fake__body{ background: #232732;
 color:white;
 box-shadow: inset 0px 0px 20px 2px black;
 margin: 1.6rem;
@@ -25,26 +25,28 @@ h1{
 }
 
 .cabecalho{
-    padding: 45px 0px 0px 29%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cabecalho__menu{
     display: flex;
-    gap: 83px;
+    flex-direction: row;
+    
     font-family: var(--fonte-cabecalho);
-    font-size: 82%;
+    font-size: 1rem;
 }
 
 .cabecalho__menu__link{
     color:white;
     background-color: #24272C;
-    padding: 18px 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 1rem 0.8rem;
     border-radius: 30px;
     box-shadow: -5px -3px 5px -3px /*#6086D3;*/rgba(128, 128, 128, 0.5);
     /*box-shadow: 0.1px 0px 1.1px 0.1px #778192;*/
     text-decoration: none;
+    margin: 0 1rem 0 1rem;
 }
 .navegacao{
     width: 18rem;
@@ -93,6 +95,7 @@ h1{
     border: 1px solid red;
     margin-top: 2.8rem;
     margin-right: 13rem;
+    transition: all ease .5s;
 }
 .icon__github:hover{
     background-color: #232732;
@@ -107,26 +110,23 @@ h1{
 .h1__contato{
     font-family: var(--fonte-cabecalho);
     font-size: 2rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 10% 20% 12%;
     font-weight: 500;
+    width: 80%;
+    margin:3rem 0 10rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
 }
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20%;
-    margin-left: 60%;
+    justify-content: space-around;
 }
+
 .elemento-com-imagem{
     opacity: 0.5;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1rem;
-    width: 42rem;
-    padding-right: 50%;
 }
 .elemento-com-imagem img{
     opacity: 1;
@@ -153,4 +153,18 @@ h1{
     box-shadow: -5px -3px 5px -3px /*#6086D3;*/rgba(128, 128, 128, 0.5);
     /*box-shadow: 0.1px 0px 1.1px 0.1px #778192;*/
     text-decoration: none;
+}
+
+.container__principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact__corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

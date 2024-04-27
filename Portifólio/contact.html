@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <section>
+    <section id="fake__body">
         <header class="cabecalho">
             <nav class="cabecalho__menu">
                 <a class="cabecalho__menu__link" href="contact.html">Contato</a>
@@ -18,22 +18,26 @@
                 <a class="cabecalho__menu__link">Projetos</a>
             </nav>
         </header>
+        <section class="contact__corpo">
         <h1 class="h1__contato">Entre em contato</h1>
-        <div class="elemento-com-imagem">
-            <img src="./transferir-removebg-preview.png" alt="logo da aranha do miles">
-        </div>
-        <div class="container" id="form-container">
-            <form id="contact-form">
-                <label for="name"><input placeholder="Nome*" class="input" name="text" type="text"><br></label><br>
-                <label for="email"><input placeholder="Email*" class="input" name="text" type="text"><br></label><br>
-                <label for="message"><textarea placeholder="Mensagem*" class="input" id="message" name="message" required></textarea><br></label><br>
-                <button class="botao__enviar" type="submit">Enviar</button>
-            </form>
-            <div id="confirmation" style="display: none;">
-                <p>Obrigado por entrar em contato! Recebemos sua mensagem.</p>
+        <div class="container__principal">
+            <div class="elemento-com-imagem">
+                <img src="./transferir-removebg-preview.png" alt="logo da aranha do miles">
+            </div>
+            <div class="container" id="form-container">
+                <form id="contact-form">
+                    <label for="name"><input placeholder="Nome*" class="input" name="text" type="text"><br></label><br>
+                    <label for="email"><input placeholder="Email*" class="input" name="text" type="text"><br></label><br>
+                    <label for="message"><textarea placeholder="Mensagem*" class="input" id="message" name="message" required></textarea><br></label><br>
+                    <button class="botao__enviar" type="submit">Enviar</button>
+                </form>
+                <div id="confirmation" style="display: none;">
+                    <p>Obrigado por entrar em contato! Recebemos sua mensagem.</p>
+                </div>
             </div>
         </div>
-        <script src="./contato.js"></script>
     </section>
+    </section>
+    <script src="./contato.js"></script>
 </body>
 </html>
